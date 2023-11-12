@@ -1,0 +1,1148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700;900&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* General*/
+:root{
+    --blue:#335C67;
+    --white:rgb(255, 255, 255);
+    --yellow:#FFF3B0;
+    --darkYellow: #E09F3E;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    padding: 20px 40px;
+    
+
+}
+/* General */
+
+/* start header */
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color:var(--white);
+
+}
+header{
+ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 10px 40px;
+    position:fixed;
+    
+}
+header a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Lobster', cursive;
+    color: var(--darkYellow);
+    font-weight: bold;
+
+
+
+}
+.logo img{
+    width: 120px;
+    height: 75px;
+}
+.logo:hover{
+color: var(--darkYellow);
+}
+nav a {
+  margin-left: 56px;
+   font-size: 25px;
+   color: var(--blue);
+   font-weight: 500;
+   text-align: center;
+}
+nav a:hover{
+   color:  var(--darkYellow);
+    border-radius: 14px;
+
+}
+/* end header */
+
+/* start hero section */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blue);
+ 
+    
+}
+.hero-image img{
+    width: 600px; ;
+    height: 600px;
+}
+
+.hero-info h2{
+    font-size: 96px;
+   
+
+}
+.hero-info p{
+      font-size: 35px;
+      line-height: 1.6;
+
+}
+span.name{
+    font-weight: bold;
+}
+span.company{
+    font-weight: bold;
+    color:  var(--darkYellow);
+}
+
+/* start about */
+.about-section{
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-info img{
+    width: 600px; ;
+    height: 600px;
+}
+.about-info p{
+    font-size: 30px;
+    line-height: 1.6;
+}
+/* /* end about */
+
+/* start services */
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.title{
+    color: var(--blue);
+     padding: 10px 0;
+}
+   .card{
+    border-radius: 4%;
+    background-color: var(--blue);
+    width: 19%;
+    text-align: center;
+    color: var(--yellow);
+    padding: 29px 31px;
+    box-shadow: rgb(0 0 0 / 50%) 10px 12px 8px;
+
+}
+.services-section .cards .card .card-icon img{
+width: 100px;
+height: 100px;
+
+
+}
+.card-info {
+   padding-top: 20px;
+}
+.card-info p{
+    Padding: 15px;
+}
+/* end services */
+
+/* start Projects */
+.projects-section{
+    background-color: var(--blue);
+  
+}
+
+.yellow{
+    color: var(--yellow);
+    margin-bottom: 100px;
+}
+.projects-section .cards .card{
+    background-color: var(--yellow);
+    width: 25%;
+    color: var(--blue);
+    padding: 0;
+}
+.projects-section .cards .card .card-icon img{
+    width: 100%;
+    height: 30%;
+    border-radius: 10px 10px 0 0;
+
+
+
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+  
+}
+.btn{
+    background-color: var(--blue);
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: var(--yellow);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* end projects */
+/* Start tutorial */
+.tutorial-section .cards .card{
+    padding: 0;
+    cursor: pointer;
+}
+.tutorial-section .cards .card .card-icon img{
+    width: 100%;
+    height: 30%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* end tutorial */
+/* Start Stack */
+.tech-stack{
+    display:flex;
+    justify-content: space-between;
+}
+.tech-stack-section{
+    background-color: var(--blue);
+    padding: 100px;
+    
+}
+
+.tech-stack img{
+width: 350px;
+height: 350px;
+
+
+}
+/* end Stack */
+/* start contact us */
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-info form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact-info input{
+
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: var(--yellow); 
+    font-weight: bold;
+    border:none;
+}
+.contact-info input::placeholder{
+    color:var(--yellow);
+    opacity: .8;
+    position:absolute;
+    top: 10px;
+    font-weight: normal;
+
+}
+.contact-info .tf{
+    width: 400px;
+}
+.contact-info .msg{
+    width: 400px;
+    height: 150px;
+    
+}
+.submit{
+    background-color: red;
+}
+
+/* end contact us */
+/* start footer */
+footer{
+    background-color: var(--blue);
+}
+footer{
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: var(--yellow);
+ font-size: 25px;
+ padding: 15px 40px;
+
+}
+ footer .social-icons img{
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: var(--yellow);
+
+}
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--yellow);
+}
+a:hover{
+color:  var(--darkYellow);
+}
+.social-icons img:hover{
+    background-color:  var(--darkYellow);
+}
+/* end footer */
+/* start modal */
+.modal-container{
+    background-color: rgba(0, 0, 0, .3) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+display: none;
+
+   
+    
+    
+    
+}
+
+.show{
+display: flex;
+
+}
+.hide{
+display: none;
+
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--blue);
+    padding: 30px 50px;
+    border-radius: 10px;
+    width: 750px
+    
+
+}
+#btn-close{
+    background-color: var(--darkYellow);
+    color: var(--blue);
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+/* end modal */
+
+/* Responsive Design */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* first page moidfication */
+    section{
+        padding: 10px 20px;
+    }
+    header{
+        flex-direction: column;
+        padding: 15px 35px;
+        
+    }
+    nav a{
+        font-size: 15px;
+        margin-left: 0px;
+        padding-left: 7px;
+
+    }
+    .hero-section{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .hero-info h2{
+        font-size: 50px;
+    }
+    .hero-info p{
+        font-size:20px ;
+         
+    }
+    .hero-image img{
+        width: 300px;
+        height: 308px;
+    }
+       /* header and hero page moidfication */
+       /* About page moidfication */
+       .about-info{
+        flex-direction: column;
+       }
+       .about-info p{
+        font-size: 15px;
+       }
+       .about-info img{
+        width: 300px;
+        height: 300px;
+       }
+       .title{
+        font-size: 35px;
+        padding: 0;
+       }
+       .yellow{
+        margin-bottom: 30px;
+       }
+
+       /* About page moidfication */
+       /* Services page moidfication */
+       .card{
+        width: 30%;
+        padding: 5px;
+        margin: 10px;
+       }  
+       .card-info{
+        padding: 0;
+       }
+       .card-info h3{
+        font-size: 13px;
+       }
+       .card-info p{
+        font-size: 10px;
+        padding: 8px;
+       }
+       .services-section .cards .card .card-icon  img{
+        width: 50px;
+        height: 40px;
+       }
+     
+       /* Services page moidfication */
+       /* Projects page moidfication */
+       .projects-section .cards{
+        flex-direction: column;
+        align-items: center;
+       }
+       .projects-section .cards .card{
+        width: 80%;
+       }
+       .projects-section .cards .card .card-icon img {
+        border-radius: 4px 4px 0 0;
+       }
+      .buttons{
+        padding:5px 0;
+        margin-top: 0;
+      }
+       .btn{
+        font-size: 10px;
+        padding:5px 15px;
+        margin-left: 7px;
+       }
+       /* Projects page moidfication */
+       /* tutorial page moidfication */
+       .tutorial-section .cards .card .card-icon img{
+        border-radius: 4px 4px 0 0;
+       }
+       /* tutorial page moidfication */
+       /* Techstack page moidfication */
+       .tech-stack-section{
+        padding: 50px;
+       }
+       .tech-stack img{
+        width: 70px;
+        height: 70px;
+
+       }
+       /* Techstack page moidfication */
+       /* Contat Us page moidfication */
+       .contact-info{
+        flex-direction: column;
+       }
+       .contact-info .tf{
+        width: 300px;
+       }
+       .contact-info img{
+        width: 300px;
+        height: 230px;
+       }
+       .contact-section .contact-info form input .btn{
+     width: 100px;
+    }
+   
+ 
+  
+
+       /* Contat Us page moidfication */
+       /* footer modify */
+       footer {
+        font-size: 15px;
+        flex-direction: column;
+
+       }
+       footer .social-icons img{
+        width:30px ;
+        height: 30px;
+       }
+       /* footer modify */
+
+
+
+
+} 
+/* samll devices (Normal smart phones) */
+@media only screen and (min-width: 300px) and (max-width: 599px){
+/* first page moidfication */
+section{
+    padding: 10px 10px;
+}
+header{
+    flex-direction: column;
+    padding: 10px 20px;
+    
+}
+nav a{
+    font-size:12px;
+    margin-left: 0px;
+    padding-left: 3px;
+
+}
+.hero-section{
+ 
+    padding: 135px 0 0;
+}
+.logo{
+    font-size: 15px;
+}
+.logo img{
+    width: 90px;
+    height: 45px;
+}
+.hero-info h2{
+    font-size: 40px;
+}
+.hero-info p{
+    font-size:20px ;
+     
+}
+.hero-image img{
+    width: 300px;
+    height: 300px;
+}
+   /* header and hero page moidfication */
+   /* About page moidfication */
+ 
+   .about-info p{
+    font-size: 15px;
+   }
+   .about-info img{
+    width: 300px;
+    height: 300px;
+   }
+   .title{
+    font-size: 25px;
+    padding: 0;
+   }
+   .yellow{
+    margin-bottom: 30px;
+   }
+
+   /* About page moidfication */
+   /* Services page moidfication */
+   .card{
+    width: 30%;
+    padding: 4px 4px;
+    margin: 3px;
+   }  
+   .card-info{
+    padding: 0;
+   }
+   .card-info h3{
+    font-size: 11px;
+   }
+   .card-info p{
+    font-size: 8px;
+    padding: 5px 0px;
+   }
+   .services-section .cards .card .card-icon  img{
+    width: 50px;
+    height: 50px;
+   }
+ 
+   /* Services page moidfication */
+   /* Projects page moidfication */
+
+   .projects-section .cards .card{
+    width: 50%;
+ 
+   }
+   .projects-section .cards .card .card-icon img {
+    border-radius: 4px 4px 0 0;
+   }
+  .buttons{
+    padding:10px 0;
+    margin-top: 0;
+  }
+   .btn{
+    font-size: 13px;
+    padding:5px 10px;
+    margin-left: 7px;
+   }
+   /* Projects page moidfication */
+   /* tutorial page moidfication */
+   .tutorial-section .cards .card .card-icon img{
+    border-radius: 4px 4px 0 0;
+   }
+   .tutorial-section .cards .card p{
+    padding: 15px 5px;
+   }
+   /* tutorial page moidfication */
+   /* Techstack page moidfication */
+   .tech-stack-section{
+    padding: 30px;
+   }
+   .tech-stack img{
+    width: 70px;
+    height: 70px;
+
+   }
+   /* Techstack page moidfication */
+   /* Contat Us page moidfication */
+   .contact-info{
+    flex-direction: column;
+   }
+  
+   .contact-info img{
+    width: 400px;
+    height: 300px;
+   }
+
+
+
+
+   /* Contat Us page moidfication */
+   /* footer modify */
+   footer {
+    font-size: 11px;
+    flex-direction: column;
+    padding: 15px 5px;
+
+   }
+   footer .social-icons img{
+    width:25px ;
+    height: 25px;
+   }
+   /* footer modify */
+
+   /* modals modify  */
+   .modal{
+    width: 400px;
+    height: 250px;
+    padding: 15px 25px;
+    
+    
+   }
+   .modal iframe{
+    width: 350px;
+    height: 200px;
+   }
+   #btn-close{
+    font-size: 15px;
+    color: black;
+    padding: 5px 10px;
+   }
+   /* modals modify  */
+
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) { 
+      /* first page moidfication */
+      section{
+        padding: 10px 20px;
+    }
+    header{
+        flex-direction: column;
+        padding: 15px 35px;
+        
+    }
+    nav a{
+        font-size:18px;
+        margin-left: 0px;
+        padding-left: 12px;
+
+    }
+    .hero-section{
+     
+        padding: 130px 40px 0px 40px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .logo img{
+       width: 100px;
+       height: 50px;
+    }
+    .hero-info h2{
+        font-size: 40px;
+    }
+    .hero-info p{
+        font-size:25px ;
+         
+    }
+    .hero-image img{
+        width: 350px;
+        height: 350px;
+    }
+       /* header and hero page moidfication */
+       /* About page moidfication */
+     
+       .about-info p{
+        font-size: 15px;
+       }
+       .about-info img{
+        width: 300px;
+        height: 300px;
+       }
+       .title{
+        font-size: 35px;
+        padding: 0;
+       }
+       .yellow{
+        margin-bottom: 30px;
+       }
+
+       /* About page moidfication */
+       /* Services page moidfication */
+       .card{
+        width: 35%;
+        padding: 10px;
+        margin: 15px;
+       }  
+       .card-info{
+        padding: 0;
+       }
+       .card-info h3{
+        font-size: 15px;
+       }
+       .card-info p{
+        font-size: 13px;
+        padding: 8px 0;
+       }
+       .services-section .cards .card .card-icon  img{
+        width: 70px;
+        height: 70px;
+       }
+     
+       /* Services page moidfication */
+       /* Projects page moidfication */
+    
+       .projects-section .cards .card{
+        width: 50%;
+     
+       }
+       .projects-section .cards .card .card-icon img {
+        border-radius: 4px 4px 0 0;
+       }
+      .buttons{
+        padding:10px 0;
+        margin-top: 0;
+      }
+       .btn{
+        font-size: 13px;
+        padding:5px 10px;
+        margin-left: 7px;
+       }
+       /* Projects page moidfication */
+       /* tutorial page moidfication */
+       .tutorial-section .cards .card .card-icon img{
+        border-radius: 4px 4px 0 0;
+       }
+       .tutorial-section .cards .card p{
+        padding: 15px 5px;
+       }
+       /* tutorial page moidfication */
+       /* Techstack page moidfication */
+       .tech-stack-section{
+        padding: 50px;
+       }
+       .tech-stack img{
+        width: 150px;
+        height: 150px;
+
+       }
+       /* Techstack page moidfication */
+       /* Contat Us page moidfication */
+       .contact-info{
+        flex-direction: column;
+       }
+      
+       .contact-info img{
+        width: 400px;
+        height: 300px;
+       }
+   
+ 
+  
+
+       /* Contat Us page moidfication */
+       /* footer modify */
+       footer {
+        font-size: 15px;
+        flex-direction: column;
+        padding: 15px 20;
+
+       }
+       footer .social-icons img{
+        width:30px ;
+        height: 30px;
+       }
+       /* footer modify */
+          /* modals modify  */
+   .modal{
+    width: 550px;
+    height: 400px;
+    padding: 15px 25px;
+    
+    
+   }
+   .modal iframe{
+    width: 450px;
+    height: 300px;
+   }
+   #btn-close{
+    font-size: 15px;
+    color: black;
+    padding: 5px 10px;
+   }
+   /* modals modify  */
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px)  and (max-width: 992px){ 
+    /* first page moidfication */
+    section{
+        padding: 10px 20px;
+    }
+    header{
+    
+        padding: 15px 35px;
+        
+    }
+    nav a{
+        font-size: 17px;
+        margin-left: 0px;
+        padding-left: 12px;
+
+    }
+    .hero-section{
+     
+        padding: 40px 30px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .logo img{
+       width: 105px;
+       height: 55px;
+    }
+    .hero-info h2{
+        font-size: 60px;
+    }
+    .hero-info p{
+        font-size:25px ;
+         
+    }
+    .hero-image img{
+        width: 400px;
+        height: 400px;
+    }
+       /* header and hero page moidfication */
+       /* About page moidfication */
+     
+       .about-info p{
+        font-size: 15px;
+       }
+       .about-info img{
+        width: 400px;
+        height: 400px;
+       }
+       .title{
+        font-size: 35px;
+        padding: 0;
+       }
+       .yellow{
+        margin-bottom: 30px;
+       }
+
+       /* About page moidfication */
+       /* Services page moidfication */
+       .card{
+        width: 20%;
+        padding: 20px ;
+        margin: 15px;
+       }  
+       .card-info{
+        padding: 0;
+       }
+       .card-info h3{
+        font-size: 15px;
+       }
+       .card-info p{
+        font-size: 13px;
+        padding:10px 0;
+       }
+       .services-section .cards .card .card-icon  img{
+        width: 70px;
+        height: 70px;
+       }
+     
+       /* Services page moidfication */
+       /* Projects page moidfication */
+    
+       .projects-section .cards .card{
+        width: 27%;
+     
+       }
+       .projects-section .cards .card .card-icon img {
+        border-radius: 4px 4px 0 0;
+       }
+      .buttons{
+        padding:10px 0;
+        margin-top: 0;
+      }
+       .btn{
+        font-size: 13px;
+        padding:5px 15px;
+        margin-left: 7px;
+       }
+       /* Projects page moidfication */
+       /* tutorial page moidfication */
+       .tutorial-section .cards .card .card-icon img{
+        border-radius: 4px 4px 0 0;
+       }
+       .tutorial-section .cards .card p{
+        padding: 15px 5px;
+       }
+       /* tutorial page moidfication */
+       /* Techstack page moidfication */
+       .tech-stack-section{
+        padding: 50px;
+       }
+       .tech-stack img{
+        width: 200px;
+        height: 200px;
+
+       }
+       /* Techstack page moidfication */
+       /* Contat Us page moidfication */
+    
+       .contact-info .tf {
+        width: 300px;
+       }
+       .contact-info img{
+        width: 450px;
+        height: 330px;
+       }
+     
+   
+ 
+  
+
+       /* Contat Us page moidfication */
+       /* footer modify */
+       footer {
+        font-size: 15px;
+   
+        padding: 10px 20;
+
+       }
+       footer .social-icons img{
+        width:30px ;
+        height: 30px;
+       }
+       /* footer modify */
+        
+  }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width:1285px ) { 
+        /* first page moidfication */
+        section{
+            padding: 10px 20px;
+        }
+        header{
+        
+            padding: 15px 35px;
+            
+        }
+        nav a{
+            font-size: 25px;
+            margin-left: 0px;
+            padding-left: 20px;
+    
+        }
+        .hero-section{
+         
+            padding: 100px 40px;
+        }
+        .logo{
+            font-size: 20px;
+        }
+        .logo img{
+           width: 115px;
+           height: 63px;
+        }
+        .hero-info h2{
+            font-size: 70px;
+        }
+        .hero-info p{
+            font-size:30px ;
+             
+        }
+        .hero-image img{
+            width: 450px;
+            height: 400px;
+        }
+           /* header and hero page moidfication */
+           /* About page moidfication */
+         
+           .about-info p{
+            font-size: 20px;
+           }
+           .about-info img{
+            width: 400px;
+            height: 400px;
+           }
+           .title{
+            font-size: 40px;
+            padding: 10px 0 0 0;
+           }
+           .yellow{
+            margin-bottom: 20px;
+           }
+    
+           /* About page moidfication */
+           /* Services page moidfication */
+           .card{
+            width: 22.5%;
+            padding: 20px;
+            margin: 15px;
+           }  
+           .card-info{
+            padding: 0;
+           }
+           .card-info h3{
+            font-size: 15px;
+           }
+           .card-info p{
+            font-size: 13px;
+            padding:10px 0;
+           }
+           .services-section .cards .card .card-icon  img{
+            width: 70px;
+            height: 70px;
+           }
+         
+           /* Services page moidfication */
+           /* Projects page moidfication */
+        
+           .projects-section .cards .card{
+            width: 27%;
+         
+           }
+           .projects-section .cards .card .card-icon img {
+            border-radius: 4px 4px 0 0;
+           }
+          .buttons{
+            padding:10px 0;
+            margin-top: 0;
+          }
+           .btn{
+            font-size: 13px;
+            padding:5px 15px;
+            margin-left: 7px;
+           }
+           /* Projects page moidfication */
+           /* tutorial page moidfication */
+           .tutorial-section .cards .card .card-icon img{
+            border-radius: 4px 4px 0 0;
+           }
+           .tutorial-section .cards .card p{
+            padding: 15px 5px;
+           }
+           /* tutorial page moidfication */
+           /* Techstack page moidfication */
+           .tech-stack-section{
+            padding: 50px;
+           }
+           .tech-stack img{
+            width: 200px;
+            height: 200px;
+    
+           }
+           /* Techstack page moidfication */
+           /* Contat Us page moidfication */
+        
+           .contact-info .tf {
+            width: 350px;
+           }
+           .contact-info img{
+            width: 450px;
+            height: 330px;
+           }
+         
+       
+     
+      
+    
+           /* Contat Us page moidfication */
+           /* footer modify */
+           footer {
+            font-size: 20px;
+       
+            padding: 10px 20;
+    
+           }
+           footer .social-icons img{
+            width:40px ;
+            height: 40px;
+           }
+           /* footer modify */
+            
+      }
+    
+
+
+
+/* End Responsive */
